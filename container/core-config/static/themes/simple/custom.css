@@ -1,0 +1,34 @@
+#search_header{
+  display:flex !important;
+  width:100% !important;
+  align-items:center !important;
+}
+
+.search_box{
+  display:flex !important;
+  width:100% !important;
+  align-items:center !important;
+  gap:8px !important;
+}
+
+#q{
+  flex:1 !important;
+  min-width:0 !important;
+  width:100% !important;
+  height:52px !important;
+}
+
+#send_search,
+#clear_search{
+  width:56px !important;
+  height:52px !important;
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+}
+
+#categories{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:6px !important;
+}

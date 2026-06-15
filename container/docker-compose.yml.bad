@@ -12,6 +12,7 @@ services:
     env_file: ./.env
     volumes:
       - ./core-config/:/etc/searxng/:Z
+      - ./core-config/static:/usr/local/searxng/searx/static:Z
       - core-data:/var/cache/searxng/
 
   valkey:

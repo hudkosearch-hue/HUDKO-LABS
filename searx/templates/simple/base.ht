@@ -69,10 +69,9 @@
   <footer>
     <div style="text-align:center;padding:20px;margin-top:20px;border-top:2px solid #FFD700;">
         <h3 style="color:#c8102e;margin-bottom:10px;">HUDKO Search</h3>
-        <p>Karnataka's First AI-Powered Search Engine</p>
-        <p><strong>Powered by HUDKO LABS</strong></p>
-        <p>Built with Pride in Karnataka • Manipal • Kundapura</p>
+        <p>Powered by <strong>HUDKO LABS</strong></p>
         <p style="color:#c8102e;font-weight:bold;">
+            Made in Karnataka | Manipal | Kundapura
         </p>
         <p style="font-size:12px;opacity:0.8;">Privacy Focused Search Engine</p>
         <p style="font-size:12px;opacity:0.7;">© 2026 HUDKO LABS. All Rights Reserved.</p>
@@ -80,4 +79,5 @@
   </footer>
 </body>
 </html>
+
 

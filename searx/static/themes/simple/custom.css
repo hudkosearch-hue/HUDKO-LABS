@@ -1,0 +1,11 @@
+
+.ai-btn{
+    animation: aiPulse 3s infinite;
+}
+
+@keyframes aiPulse{
+    0%{box-shadow:0 0 0 0 rgba(255,215,0,.6);}
+    70%{box-shadow:0 0 0 14px rgba(255,215,0,0);}
+    100%{box-shadow:0 0 0 0 rgba(255,215,0,0);}
+}
+

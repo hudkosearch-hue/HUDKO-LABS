@@ -1,0 +1,46 @@
+<form id="search" method="{{ method or 'POST' }}" action="{{ url_for('search') }}" role="search">
+
+<div style="text-align:center;margin-top:20px;margin-bottom:10px;">
+
+<a href="{{ url_for('index') }}">
+<img src="{{ url_for('static', filename='img/hudko-logo.svg') }}"
+     alt="HUDKO Search"
+     style="
+       width:min(85vw,420px);
+       max-width:420px;
+       height:auto;
+       display:block;
+       margin:auto;
+     ">
+</a>
+
+</div>
+
+<div class="search_box" style="max-width:700px;margin:auto;">
+<input id="q"
+       name="q"
+       type="text"
+       placeholder="{{ _('Search for...') }}"
+       autocomplete="off"
+       autocapitalize="none"
+       spellcheck="false"
+       autocorrect="off"
+       dir="auto"
+       value="{{ q or '' }}">
+
+<button id="send_search" type="submit" aria-label="{{ _('search') }}">
+<span class="hide_if_nojs">{{ icon_big('search') }}</span>
+</button>
+
+</div>
+
+{% for category in selected_categories %}
+<input type="hidden" name="category_{{ category }}" value="1">
+{% endfor %}
+
+<input type="hidden" name="language" value="{{ current_language }}">
+<input type="hidden" name="time_range" value="{{ time_range }}">
+<input type="hidden" name="safesearch" value="{{ safesearch }}">
+<input type="hidden" name="theme" value="{{ theme }}">
+
+</form>

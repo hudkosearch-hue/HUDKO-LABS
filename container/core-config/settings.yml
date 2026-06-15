@@ -1,0 +1,5 @@
+search:
+  safe_search: 0
+
+ui:
+  static_use_hash: false
